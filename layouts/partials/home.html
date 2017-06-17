@@ -2,15 +2,25 @@
 
 	<div class="container">
 
-        {{ partial "subheader.html" . }}
+        {{ if .Site.Params.showSubheader }}
+            {{ partial "subheader.html" . }}
+        {{ end }}
 
-        {{ partial "services.html" . }}
+        {{ if .Site.Params.showServices }}
+            {{ partial "services.html" . }}
+        {{ end }}
 
-        {{ partial "recentworks.html" . }}
+        {{ if .Site.Params.showRecentWorks }}
+            {{ partial "recentworks.html" . }}
+        {{ end }}
 
-        {{ partial "download.html" . }}
+        {{ if .Site.Params.showDownload }}
+            {{ partial "download.html" . }}
+        {{ end }}
 
-        {{ partial "clients.html" . }}
+        {{ if .Site.Params.showClients }}
+            {{ partial "clients.html" . }}
+        {{ end }}
 
 	</div>	<!-- /container -->
 
