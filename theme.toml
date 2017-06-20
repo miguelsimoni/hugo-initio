@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/miguelsimoni/hugo-initio/blob/master/LICENSE"
 description = ""
 homepage = "https://miguelsimoni.github.io/hugo-initio-site/"
-tags = []
+tags = ["bootstrap","disqus","share this"]
 features = []
 min_version = "0.21"
 

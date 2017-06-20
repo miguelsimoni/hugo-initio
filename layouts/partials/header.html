@@ -20,6 +20,13 @@
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
 
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
+
+    {{ if .Site.Params.customsharethis }}
+        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
+    {{ else }}
+        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=inline-share-buttons"></script>
+    {{ end }}
+
 </head>
 <body class="home">
 
