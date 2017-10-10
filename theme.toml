@@ -1,6 +1,6 @@
 name = "Hugo Initio"
 license = "MIT"
-licenselink = "https://github.com/miguelsimoni/hugo-initio/blob/master/LICENSE"
+licenselink = "https://github.com/miguelsimoni/hugo-initio/blob/master/LICENSE.md"
 description = ""
 homepage = "https://miguelsimoni.github.io/hugo-initio-site/"
 tags = ["blog","responsive","personal","google analytics","portfolio","disqus","bootstrap","font awesome","projects","creative","landing page","product","white","share this"]
