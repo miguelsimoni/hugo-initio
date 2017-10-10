@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/post/vivamus-lacus-mauris/</loc>
+    <lastmod>2013-06-17T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/service/service3/</loc>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/service/service1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/</loc>
+    <lastmod>2013-06-17T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/post/</loc>
+    <lastmod>2013-06-17T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/service/service4/</loc>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/service/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/service/service2/</loc>
+  </url>
+  
+</urlset>
