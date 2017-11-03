@@ -18,10 +18,7 @@
 
 ```
 $ cd /<your-hugo-site-directory>
-$ mkdir themes
-$ cd themes
-$ git clone --depth=1 https://github.com/miguelsimoni/hugo-initio.git
-$ rm -rf hugo-initio/.git
+$ git submodule add https://github.com/miguelsimoni/hugo-initio.git themes/hugo-initio
 ```
 
 More info: [hugo setup guide](https://gohugo.io/overview/installing/)
