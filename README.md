@@ -41,6 +41,11 @@ showServices = true
 showRecentWorks = true
 showDownload = true
 showClients = true
+
+footerEnableContact = true
+footerEnableFollowme = true
+footerEnableTextWidget = false
+footerEnableFormWidget = false
 ```
 ### Social Networks Icons
 

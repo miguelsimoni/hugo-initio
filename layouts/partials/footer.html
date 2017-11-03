@@ -1,6 +1,7 @@
 <footer id="footer">
 	<div class="container">
 		<div class="row">
+			{{ if .Site.Params.footerEnableContact }}
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Contact</h3>
 				<div class="widget-body">
@@ -11,7 +12,9 @@
 					</p>
 				</div>
 			</div>
+			{{ end }}
 
+			{{ if .Site.Params.footerEnableFollowme }}
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Follow me</h3>
 				<div class="widget-body">
@@ -24,7 +27,9 @@
 					</p>
 				</div>
 			</div>
+			{{ end }}
 
+			{{ if .Site.Params.footerEnableTextWidget }}
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Text widget</h3>
 				<div class="widget-body">
@@ -32,7 +37,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
 				</div>
 			</div>
+			{{ end }}
 
+			{{ if .Site.Params.footerEnableFormWidget }}
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Form widget</h3>
 				<div class="widget-body">
@@ -43,6 +50,7 @@
 					</p>
 				</div>
 			</div>
+			{{ end }}
 
 		</div> <!-- /row of widgets -->
 	</div>
