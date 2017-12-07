@@ -21,6 +21,11 @@ publishDir = "docs"
     showDownload = true
     showClients = true
 
+    footerEnableContact = true
+    footerEnableFollowme = true
+    footerEnableTextWidget = false
+    footerEnableFormWidget = false
+
 [[menu.main]]
     name = "home"
     url = "/"
