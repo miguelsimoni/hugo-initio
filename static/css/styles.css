@@ -411,6 +411,11 @@ img {
   position: relative;
   padding-top: 50%;
 }
+@media only screen and (max-width: 768px) {
+  .thumbnail .img {
+    height: 280px;
+  }
+}
 .thumbnail .title {
   text-transform: uppercase;
   margin: 0 2em;
@@ -433,6 +438,11 @@ img {
   -moz-transition-duration: 550ms;
   -o-transition-duration: 550ms;
   transition-duration: 550ms;
+}
+@media only screen and (max-width: 768px) {
+  .thumbnail .cover {
+    height: 280px;
+  }
 }
 .thumbnail .cover .more {
   position: absolute;
