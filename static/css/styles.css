@@ -787,7 +787,7 @@ footer.entry-meta .meta-in {
   font-size: 30px;
 }
 .follow-me-icons i {
-  float: left;
+  padding: 15px 0;
   margin: 0 10px 0 0;
 }
 /* Max page width
