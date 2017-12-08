@@ -1,6 +1,8 @@
 <div class="row section featured topspace">
+
     <h2 class="section-title"><span>Services</span></h2>
-    <div class="row">
+
+    <div class="">
         {{ range where .Data.Pages "Section" "service" }}
             <div class="col-sm-6 col-md-3">
                 <h3 class="text-center">{{ .Title }}</h3>
@@ -9,4 +11,5 @@
             </div>
         {{ end }}
     </div>
+
 </div> <!-- / section -->

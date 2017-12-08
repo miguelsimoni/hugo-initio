@@ -386,6 +386,7 @@ img {
   text-align: center;
   font-size: 12px;
   font-size: 0.75rem;
+  margin-bottom: 40px;
 }
 .thumbnail {
   display: block;
@@ -409,11 +410,12 @@ img {
   height: 180px;
   margin: 0 0 20px;
   position: relative;
-  padding-top: 50%;
 }
 @media only screen and (max-width: 768px) {
   .thumbnail .img {
+    width: calc(100% + 30px);
     height: 280px;
+    margin-left: -15px;
   }
 }
 .thumbnail .title {
