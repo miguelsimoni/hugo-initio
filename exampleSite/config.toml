@@ -23,8 +23,8 @@ publishDir = "docs"
 
     footerEnableContact = true
     footerEnableFollowme = true
-    footerEnableTextWidget = false
-    footerEnableFormWidget = false
+    footerEnableTextWidget = true
+    footerEnableFormWidget = true
 
 [[menu.main]]
     name = "home"
