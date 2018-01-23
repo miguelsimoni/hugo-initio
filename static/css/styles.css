@@ -69,7 +69,7 @@ body {
   border-color: #cccccc;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #454545;
+  color: #333333;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
@@ -79,7 +79,7 @@ body {
   color: #000000;
 }
 .navbar-default .dropdown ul.dropdown-menu > li > a {
-  color: #454545;
+  color: #333333;
 }
 .navbar-default .dropdown ul.dropdown-menu > li > a:hover {
   background-color: #eeeeee;
