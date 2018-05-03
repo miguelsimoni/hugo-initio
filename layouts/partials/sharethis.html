@@ -3,10 +3,10 @@
         {{ if .Site.Params.sharethis.custom }}
             {{ range .Site.Params.social }}
                 {{ if .sharethis }}
-                    <div data-network="{{ .network }}" data-title="{{ .Title }} >> " class="st-custom-button"> <i class="fa {{ .icon }} fa-2x"></i> </div>
+                    <div data-network="{{ .network }}" data-title="{{ .Title }} >> " class="st-custom-button"> <i class="{{ .icon }} fa-2x"></i> </div>
                 {{ end }}
             {{ end }}
-            <div data-network="sharethis" data-title="{{ .Title }} >> " class="st-custom-button"> <i class="fa fa-share-alt-square fa-2x"></i> </div>
+            <div data-network="sharethis" data-title="{{ .Title }} >> " class="st-custom-button"> <i class="fas fa-share-alt-square fa-2x"></i> </div>
         {{ else }}
             <div class="sharethis-inline-share-buttons"></div>
             <br>
