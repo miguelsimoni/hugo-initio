@@ -11,6 +11,7 @@ publishDir = "docs"
     phone = "+234 23 9873237"
     address = "234 Hidden Pond Road, Ashland City, TN 37015"
     year = 2017
+    avatar = "images/guy.jpg"
     background = ""
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
