@@ -5,10 +5,10 @@
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Contact</h3>
 				<div class="widget-body">
-					<p>{{ .Site.Params.phone }}<br>
-						<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>
+					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
+					{{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>{{ end }}
 						<br>
-						{{ .Site.Params.address }}
+						{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ end }}
 					</p>
 				</div>
 			</div>
@@ -43,10 +43,10 @@
 			<div class="col-md-3 widget">
 				<h3 class="widget-title">Form widget</h3>
 				<div class="widget-body">
-					<p>{{ .Site.Params.phone }}<br>
-						<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>
+					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
+					{{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>{{ end }}
 						<br>
-                        {{ .Site.Params.address }}
+						{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ end }}
 					</p>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 
 			<div class="col-md-6 widget">
 				<div class="widget-body">
-					<p>{{ .Site.Params.address }}</p>
+					<p>{{ if .Site.Params.address}}{{ .Site.Params.address }}{{ end }}</p>
 				</div>
 			</div>
 
