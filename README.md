@@ -2,8 +2,6 @@
 
 [Hugo-Initio](https://miguelsimoni.github.io/hugo-initio-site/) is ported from the [Initio](http://www.gettemplate.com/info/initio/) template by [GetTemplate.com](http://www.gettemplate.com/) for [Hugo](https://gohugo.io/).
 
-![screenshot](https://raw.githubusercontent.com/miguelsimoni/hugo-initio/master/images/tn.png)
-
 ![GitHub](https://img.shields.io/github/license/miguelsimoni/hugo-initio.svg?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/miguelsimoni/hugo-initio.svg?style=flat-square)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/miguelsimoni/hugo-initio.svg?style=flat-square)
@@ -12,6 +10,8 @@
 ![GitHub forks](https://img.shields.io/github/forks/miguelsimoni/hugo-initio.svg?style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/miguelsimoni/hugo-initio.svg?style=flat-square)
 ![GitHub watchers](https://img.shields.io/github/watchers/miguelsimoni/hugo-initio.svg?style=flat-square)
+
+![screenshot](https://raw.githubusercontent.com/miguelsimoni/hugo-initio/master/images/tn.png)
 
 ### Original Template Info
 
