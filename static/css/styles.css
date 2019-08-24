@@ -220,8 +220,8 @@ a:hover {
 
 
 **********************************************************************/
-#head {
-  background: #f4f4f4 url(../images/bg_head.jpg) top center;
+#head .banner {
+  background-position: top center;
   background-size: cover;
   color: #7C7C7C;
   padding: 30px 0 35px 0;
