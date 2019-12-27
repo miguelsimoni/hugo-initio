@@ -30,14 +30,15 @@
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
-		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
-			<span class="title">{{ .Site.Params.name }}</span>
-			<span class="tagline">{{ .Site.Params.description }}<br>
-				<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
-            </span>
-		</h1>
-	</div>
+           <div class="banner" style="background-image:url({{ .Site.BaseURL }}{{ .Site.Params.banner }});" >
+           <h1 id="logo" class="text-center">
+              <img class="img-circle" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
+              <span class="title">{{ .Site.Params.name }}</span>
+              <span class="tagline">{{ .Site.Params.description }}<br>
+                 <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+              </span>
+           </h1>
+        </div>
 
     {{ partial "menu.html" . }}
 
