@@ -21,7 +21,7 @@
 					<p class="follow-me-icons">
                         {{ range .Site.Params.social }}
                             {{ if .footer }}
-                                <a href="{{ .url }}" target="_blank"><i class="fa {{ .icon }} fa-2"></i></a>
+                                <a href="{{ .url }}" target="_blank"><i class="{{ .icon }} fa-1x"></i></a>
                             {{ end }}
                         {{ end }}
 					</p>
