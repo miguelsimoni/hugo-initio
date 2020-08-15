@@ -13,6 +13,7 @@ publishDir = "docs"
     year = 2017
     avatar = "images/guy.jpg"
     background = ""
+    banner = "images/bg_head.jpg"
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
 
