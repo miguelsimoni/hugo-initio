@@ -1,0 +1,39 @@
+<main id="main">
+
+  <div class="container">
+
+    {{ if .Site.Params.showSubheader }}
+      {{ partial "home/subheader.html" . }}
+    {{ end }}
+
+    {{ with .Site.GetPage "section" "home" }}
+            
+      {{ $sectionPages := where .Site.Pages "Section" .Section }}
+        {{ if ge (len $sectionPages) 1 }}
+        
+          {{ range $sectionPages }}
+          
+            {{ if eq .Type "service"}}
+              {{ partial "home/services.html" . }}
+              
+            {{ else if eq .Type "recentwork" }}
+              {{ partial "home/recentworks.html" . }}
+              
+            {{ else if eq .Type "download" }}
+              {{ partial "home/download.html" . }}
+              
+            {{ else if eq .Type "client" }}
+              {{ partial "home/clients.html" . }}
+              
+            {{ else if eq .Type "single"  }}
+              {{ partial "home/single.html" . }}
+              
+            {{ end }}
+            
+          {{ end }} <!-- range -->
+        {{ end }} <!-- length -->
+      {{ end }} <!-- with home -->
+
+	</div>	<!-- /container -->
+
+</main>

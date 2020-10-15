@@ -226,14 +226,23 @@ a:hover {
   color: #7C7C7C;
   padding: 30px 0 35px 0;
 }
+
 #head img.img-circle {
   display: block;
   width: 140px;
   height: 140px;
   overflow: hidden;
-  border: 9px solid rgba(0, 0, 0, 0.05);
   margin: 0 auto;
 }
+
+#head img.img-rounded {
+  display: block;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 #head .title {
   font-family: Alice, Georgia, serif;
   font-size: 49px;

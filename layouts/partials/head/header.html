@@ -7,21 +7,27 @@
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
 	<title>{{ .Title }}</title>
-
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
 
 	<!-- Bootstrap -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	
 	<!-- Icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+	
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
+	
+  {{ range .Site.Params.customCSS -}}
+      {{ $style := resources.Get . }}
+      <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen">
+  {{- end }}
 
-	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> <![endif]-->
-
-    {{ if .Site.Params.customsharethis }}
+  <!-- Share this --> 
+  {{ if .Site.Params.customsharethis }}
         <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
     {{ end }}
 
@@ -32,7 +38,7 @@
 	<div id="head" class="parallax" parallax-speed="2">
            <div class="banner" style="background-image:url({{ .Site.BaseURL }}{{ .Site.Params.banner }});" >
            <h1 id="logo" class="text-center">
-              <img class="img-circle" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
+              <img class="img-{{.Site.Params.imgclass}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
               <span class="title">{{ .Site.Params.name }}</span>
               <span class="tagline">{{ .Site.Params.description }}<br>
                  <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
@@ -40,6 +46,6 @@
            </h1>
         </div>
 
-    {{ partial "menu.html" . }}
+    {{ partial "head/menu.html" . }}
 
 </header>
