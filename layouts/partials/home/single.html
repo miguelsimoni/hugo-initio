@@ -1,11 +1,11 @@
 <div class="row section featured topspace">
     <h2 class="section-title"><span>{{.Title}}</span></h2>
     <div class="">
-        {{ range where .Site.RegularPages "Section" "home/{{lower .Title}}"}}
+        {{ range where .Pages "Section" "{{.Title}}" }} 
             <div class="col-sm-6 col-md-3">
-                <h3>{{ .Title }}</h3>
+                <strong>{{ .Title }}</strong>
                 <p>{{ .Content }}</p>
             </div>
-        {{ end }} 
+        {{ end }}
     </div>
 </div> 

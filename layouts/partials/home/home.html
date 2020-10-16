@@ -6,7 +6,7 @@
       {{ partial "home/subheader.html" . }}
     {{ end }}
 
-    {{ with .Site.GetPage "section" "home" }}
+    {{ range where .Pages "Section" "home" }} 
             
       {{ $sectionPages := where .Site.Pages "Section" .Section }}
         {{ if ge (len $sectionPages) 1 }}
@@ -25,7 +25,7 @@
             {{ else if eq .Type "client" }}
               {{ partial "home/clients.html" . }}
               
-            {{ else if eq .Type "single"  }}
+            {{ else }}
               {{ partial "home/single.html" . }}
               
             {{ end }}
