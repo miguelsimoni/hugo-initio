@@ -3,6 +3,9 @@
 [404_description]
     other = "Oops! This page doesn't exist!"
 
+[subheader]
+    other = ""
+
 [read_more]
     other = "Read more"
 [see_details]

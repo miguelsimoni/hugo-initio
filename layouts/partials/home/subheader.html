@@ -1,5 +1,7 @@
 <div class="row section topspace">
     <div class="col-md-12">
-       <p class="lead text-center text-muted">{{ .Site.Params.subheader }}</p>
+       <p class="lead text-center text-muted">
+          {{ i18n "subheader" . | markdownify }}
+        </p>
     </div>
 </div> <!-- / section -->
