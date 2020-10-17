@@ -11,7 +11,7 @@
  						<div class="entry-meta">
                <span class="posted-on">
                   <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-                     {{- .Date.Format "January 2, 2006" -}}
+                     {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
                   </time>
                </span>
  						</div>
