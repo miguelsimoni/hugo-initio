@@ -3,6 +3,11 @@
 [404_description]
     other = "Oops! This page doesn't exist!"
 
+[read_more]
+    other = "Read more"
+[see_details]
+    other = "See details"
+
 [footer_form_title]
     other = "Form widget"
 [footer_form_content]
