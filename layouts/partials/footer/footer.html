@@ -19,11 +19,11 @@
 				<h3 class="widget-title">Follow me</h3>
 				<div class="widget-body">
 					<p class="follow-me-icons">
-                        {{ range .Site.Params.social }}
-                            {{ if .footer }}
-                                <a href="{{ .url }}" target="_blank"><i class="{{ .icon }} fa-1x"></i></a>
-                            {{ end }}
-                        {{ end }}
+            {{ range .Site.Params.social }}
+                {{ if .footer }}
+                    <a href="{{ .url }}" target="_blank"><i class="{{ .icon }} fa-1x"></i></a>
+                {{ end }}
+            {{ end }}
 					</p>
 				</div>
 			</div>
