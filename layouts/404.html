@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <h2 class="section-title">{{ i18n "404_title" . }}</h2>
+    <div class="row section topspace">
+        <div class="col-md-12">
+           <p class="lead text-center text-muted">
+               {{ i18n "404_description" . | markdownify }}
+           </p>
+        </div>
+    </div> 
+{{ end }}
