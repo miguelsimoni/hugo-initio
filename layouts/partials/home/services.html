@@ -1,13 +1,10 @@
-<div class="row section featured topspace">
 
-    <h2 class="section-title"><span>{{.Title}}</span></h2>
-
-    <div class="">
-        {{ range where .Pages "Section" "{{.Title}}" }} 
-            <div class="col-sm-12 col-md-12">
-                <h3 class="text-center">{{ .Title }}</h3>
-                <p>{{ .Content }}</p>
-            </div>
-        {{ end }} 
-    </div>
-</div> <!-- / section -->
+<div class="row">
+    {{ range where .Data.Pages "Section" .Section }}
+      <div class="col-sm-6 col-md-3">
+        <h3 class="text-center">{{ .Title }}</h3>
+        <p>{{ .Summary }}</p>
+        <p class="text-center"><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>
+      </div>
+    {{ end }}
+</div>
