@@ -27,8 +27,9 @@
                   {{ partial "home/clients.html" . }}
                 
                 {{ else if eq $stype "single"  }}
-                  {{ partial "home/single.html" . }} 
-                
+                  <div style="text-align: center;">
+                    <p>{{ .Content }}</p> 
+                  </div>
                 {{ end }}
             {{ end }}
         {{ end }}
