@@ -221,27 +221,33 @@ a:hover {
 
 **********************************************************************/
 #head .banner {
-  background-position: top center;
+  background-position: center center;
   background-size: cover;
   color: #7C7C7C;
   padding: 30px 0 35px 0;
 }
 
-#head img.img-circle {
+#head img {
   display: block;
   width: 140px;
   height: 140px;
   overflow: hidden;
   margin: 0 auto;
+  border: 9px solid rgba(0, 0, 0, 0.05);
+}
+
+#head img.img-circle {
+  border-radius: 50%
 }
 
 #head img.img-rounded {
-  display: block;
-  width: 140px;
-  height: 140px;
-  overflow: hidden;
-  margin: 0 auto;
+  border-radius: 20px;
 }
+
+#head img.img-square {
+  border-radius: none;
+}
+
 
 #head .title {
   font-family: Alice, Georgia, serif;

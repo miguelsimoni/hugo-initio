@@ -6,13 +6,14 @@ publishDir = "docs"
 
 [params]
     name = "Anthony Russel"
-    description = "A mystery person"
     email = "anthony.russel42@example.com"
     phone = "+234 23 9873237"
     address = "234 Hidden Pond Road, Ashland City, TN 37015"
     year = 2017
     avatar = "images/guy.jpg"
+    avatarclass = "circle"
     background = ""
+    banner = "images/bg_head.jpg"
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
 
