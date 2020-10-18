@@ -1,7 +1,13 @@
 
-<div class="col-lg-12">
-    <p>
-      <img src= {{ .Params.image }} alt="">
-    </p>
-</div>
+<ul class="client-grid">
+    {{ $here := .RelPermalink }}
+    {{ $data := .Resources.GetMatch .Params.file | transform.Unmarshal }} 
+    {{ range $index, $area := $data }}
+        <li class="client-grid-item">
+          <a href={{.url}} >
+            <div class="client-grid-content" style="background-image: url('{{ $here }}{{ .image }}');">'</div>
+         </a>
+        </li>
+    {{ end }}
+</ul>
 

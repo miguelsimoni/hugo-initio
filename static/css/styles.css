@@ -841,3 +841,39 @@ footer.entry-meta .meta-in {
       color: #004488;
    }
 }
+
+
+/*********************************************************************
+
+
+                               client flex grid
+
+
+**********************************************************************/
+.client-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  overflow: wrap;
+}
+
+.client-grid a {
+  color: #fff;
+}
+
+.client-grid-item {
+  flex-grow: 1 0 0; 
+  width: 200px;
+  height: 50px;
+}
+
+.client-grid-content {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
