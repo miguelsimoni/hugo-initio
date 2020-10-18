@@ -2,7 +2,7 @@
     {
         "id": 0,
         "name": "Sample title - big data solutions",
-        "image": "images/s1.jpg",
+        "image": "s1.jpg",
         "url": "#",
         "items": [
             {
@@ -22,7 +22,7 @@
     {
         "id": 1,
         "name": "Pure ipsum - development services for people",
-        "image": "images/s1.jpg",
+        "image": "s2.jpg",
         "url": "#",
         "items": [
             {
@@ -38,7 +38,7 @@
     {
         "id": 2,
         "name": "Lorem studios - interior and patio design",
-        "image": "images/s1.jpg",
+        "image": "s1.jpg",
         "url": "#",
         "items": [
             {
@@ -54,7 +54,7 @@
     {
         "id": 3,
         "name": "Pure ipsum - development services for people",
-        "image": "images/s1.jpg",
+        "image": "s2.jpg",
         "url": "#",
         "items": [
             {
@@ -70,7 +70,7 @@
     {
         "id": 4,
         "name": "Lorem studios - interior and patio design",
-        "image": "images/s1.jpg",
+        "image": "s1.jpg",
         "url": "#",
         "items": [
             {
@@ -86,7 +86,7 @@
     {
         "id": 5,
         "name": "Lorem studios - interior and patio design",
-        "image": "images/s1.jpg",
+        "image": "s2.jpg",
         "url": "#",
         "items": [
             {

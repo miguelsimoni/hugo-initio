@@ -6,7 +6,7 @@
                     {{ .Content }}
                 </div>
                 <div class="col-lg-4 text-right">
-                    <a href={{ .Params.file }} class="btn btn-primary btn-lg">{{ .Title }}</a>
+                    <a href={{ .Params.file }} class="btn btn-primary btn-lg">{{ i18n "download" . | markdownify }} {{ .Title }}</a>
                 </div>
             </div>
         </div>
