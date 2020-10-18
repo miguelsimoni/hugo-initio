@@ -1,5 +1,5 @@
 +++
-title = "Download HUGO template"
+title = "HUGO template"
 file = "https://github.com/miguelsimoni/hugo-initio/archive/master.zip"
 +++
 

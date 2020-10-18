@@ -1,5 +1,5 @@
 +++
-title = "Download original template"
+title = "original template"
 file = "http://www.gettemplate.com/downloads/initio.zip"
 +++
 
