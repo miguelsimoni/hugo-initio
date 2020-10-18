@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-  	<meta name="description" content="">
-  	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
-    
+    {{ partial "head/meta.html" . }}
     {{ partial "head/head.html" . }}
   </head>
   
   <body>
 
+  <header id="header" style="padding: 0; height: 100%">
     {{ block "header" . }}
-      {{ partial "head/header.html" . }}
+      {{ partial "header.html" . }}
     {{ end }}
+    
+    {{ block "nav" . }}
+        {{ partial "menu.html" . }}
+    {{ end }}
+  </header>
  
     {{ block "main" . }}
     {{ end }}
