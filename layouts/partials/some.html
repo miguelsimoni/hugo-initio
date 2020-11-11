@@ -1,0 +1,48 @@
+
+{{ with .twitter }}
+  <a href="https://twitter.com/{{ . }}" target="_blank">
+    <i class="fab fa-twitter"></i>
+  </a>
+{{end}}
+
+{{ with .github }}
+  <a href="https://github.com/{{ . }}" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+{{end}}
+
+{{ with .instagram }}
+  <a href="https://github.com/{{ . }}" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+{{end}}
+
+{{ with .researchgate }}
+  <a href="https://www.researchgate.net/profile/{{ . }}" target="_blank">
+    <i class="fab fa-researchgate"></i>
+  </a>
+{{end}}
+
+{{ with .website }}
+  <a href="{{ . }}" target="_blank">
+    <i class="fa fa-globe"></i>
+  </a>
+{{end}}
+
+{{ with .linkedin }}
+  <a href="https://www.linkedin.com/in/{{ . }}" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+{{end}}
+
+{{ with .facebook }}
+  <a href="https://www.facebook.com/{{ . }}" target="_blank">
+    <i class="fab fa-facebook"></i>
+  </a>
+{{end}}
+
+{{ with .orcid }}
+  <a href="https://orcid.org/{{ . }}" target="_blank">
+    <i class="fab fa-orcid"></i>
+  </a>
+{{end}}

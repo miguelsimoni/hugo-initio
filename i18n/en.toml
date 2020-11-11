@@ -3,6 +3,7 @@
 [404_description]
     other = "Oops! This page doesn't exist!"
 
+
 [subheader]
     other = ""
 
@@ -24,7 +25,6 @@
 [footer_contact_title]
     other = "Contact"
 [footer_text_title]
-    other = "Text widget"
+    other = "Code of Conduct"
 [footer_text_content]
-    other = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    
+    other = "R-Ladies is dedicated to providing a harassment-free experience for everyone. We do not tolerate harassment of participants in any form. Read our [Code of Conduct](/coc)"

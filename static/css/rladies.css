@@ -1,0 +1,253 @@
+
+@import url(//db.onlinewebfonts.com/c/513e00a92551c7f365c8d2d6cb475658?family=Helvetica+Neue);
+@import url(//db.onlinewebfonts.com/c/32439590f99f4c85f653dddb5c1e2118?family=Helvetica+Neue+WGL);
+@import url(//db.onlinewebfonts.com/c/95cecf452d3208890088a5b4c19c7ecf?family=Helvetica+Neue+ME);
+@import url(//db.onlinewebfonts.com/c/1570d2f0f10dfe605a65f3d7c91108b6?family=Helvetica+CE+35+Thin);
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+}
+
+body {
+  font-family: "Open sans", Arial, sans-serif;
+  color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Helvetica Neue", "Open Sans", sans-serif; 
+  color: #88398a;
+  font-weight: 450;
+}
+
+a {
+  color: #88398a;
+}
+ 
+a:hover, a:focus {
+  color: #441c45;
+}
+
+.navbar{
+  font-family: "Helvetica Neue WGL", "Open Sans", sans-serif; 
+  color: #88398a;
+  font-weight: 500;
+}
+
+.navbar-collapse {
+  font-family: "Helvetica Neue WGL", "Open Sans", sans-serif; 
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+   color: #88398a;
+}
+
+.navbar-default {
+  border-color: #441c45;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #441c45;
+}
+
+.entry-header .entry-meta .tagline{
+  font-family: "Helvetica Neue", "Open Sans", sans-serif; 
+  color: #fff;
+}
+
+.hero{
+  width: 100%;
+  height: 50vh;
+}
+
+.hero .title {
+  font-family: "Helvetica CE 35 Thin", "Open Sans", sans-serif; 
+  color: #fff;
+  font-size: 150%;
+}
+
+.hero  .tagline {
+  font-family: "Helvetica CE 35 Thin", "Open Sans", sans-serif; 
+  color: #fff;
+}
+
+.hero .tagline a {
+  color: #ddd;
+}
+
+.logo{
+  padding-top: 2em;
+  text-align: center;   
+ }
+ 
+.logo img{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  background-color: #88398a;
+  z-index: 2; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+#footer {
+  background: #88398a;
+  color: #f3ebf3;
+}
+
+#footer a {
+  color: #f3ebf3;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+#footer h3.widget-title {
+  color: #f3ebf3;
+}
+
+#underfooter {
+  background: #5f2760;
+  color: #aaa;
+}
+
+#main {
+  padding: 5em;
+}
+
+.flex-container {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: 100px;
+  left: 50%;
+}
+
+.directory-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  overflow: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container h1 {
+  font-size: 23px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.flex-container h2 {
+  font-size: 16px;
+  color: #111;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.flex-container h3 {
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 0;
+  letter-spacing: 5px;
+}
+
+.flex-container i {
+  font-size: 16px;
+}
+
+.flex-container p {
+  font-size: 12px;
+  text-indent: -20px;
+  padding-left: 29px; 
+  margin: 0;
+  padding-bottom: 0;
+}
+
+
+.imgdiv {
+  position: top left;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.directory-grid-item {
+  flex-grow: 1 0 0; 
+  width: 600px; /* golden ratio */
+  height: calc(600px / 1.6);
+  border: 2px solid #88398a;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  margin: 15px;
+}
+
+.directory-grid-main {
+  width: 42%;
+  float: left;
+  height: 100%;
+  padding: 20px;
+}
+
+.directory-grid-desc {
+  width: 57%;
+  float: left;
+  height: 100%;
+  padding: 20px;
+}
+
+
+@media only screen and (max-width: 650px) {
+  .directory-grid-item {
+    width: 450px; /* golden ratio */
+    height: calc(450px * 1.6);
+    position: relative;
+  }
+  
+  .flex-container p {
+    width: 100%;
+  }
+  
+  .directory-grid-main,
+  .directory-grid-desc {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  
+  .flex-container h1, 
+  .flex-container h2, 
+  .flex-container h3 {
+    text-align: center;
+  }
+  
+  .imgdiv {
+    margin: 0 auto;
+  }
+}
+

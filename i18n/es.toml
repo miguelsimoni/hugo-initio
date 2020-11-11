@@ -23,7 +23,7 @@
 [footer_contact_title]
     other = "Contacto"
 [footer_text_title]
-    other = "Widget de texto"
+    other = "Código de Conducta"
 [footer_text_content]
-    other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    other = "R-Ladies se dedica a proporcionar una experiencia libre de acoso para todos. Desde R-Ladies no toleramos el acoso de los participantes en ninguna de las formas posibles. Lea nuestro [código de conducta](/es/coc)"
     
