@@ -10,7 +10,11 @@
     other = "Read more"
 [see_details]
     other = "See details"
-
+[download]
+    other = "Download"
+[translations]
+    other = "Translations"
+    
 [footer_form_title]
     other = "Form widget"
 [footer_form_content]

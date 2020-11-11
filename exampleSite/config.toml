@@ -1,7 +1,7 @@
-baseURL = "https://miguelsimoni.github.io/hugo-initio-site/"
-languageCode = "en-us"
+baseURL = "/"
+languageCode = "en"
 title = "Initio - Free, multipurpose html5 template by GetTemplate"
-theme = "hugo-initio"
+theme = "hugo-initio-athanasiamo"
 publishDir = "docs"
 
 [params]
@@ -22,16 +22,38 @@ publishDir = "docs"
     footerEnableContact = true
     footerEnableFollowme = true
     footerEnableTextWidget = true
-    footerEnableFormWidget = true
+    footerEnableLangWidget = true
 
-[[menu.main]]
+    
+# Languages
+DefaultContentLanguage = "en"
+staticDir = ["static"]
+
+[languages]
+  [languages.en]
+  languageName = "English"
+  weight = 1
+  description = "A mystery person"
+  
+  [languages.es]
+  languageName = "Español"
+  weight = 2
+  description = "Uma pessoa misteriosa"
+  
+
+[[languages.en.menu.main]]
     name = "home"
     url = "/"
     weight = 1
-[[menu.main]]
+[[languages.en.menu.main]]
     name = "blog"
     url = "/post/"
-    weight = 5
+    weight = 3
+    
+[[languages.es.menu.main]]
+    name = "inicio"
+    url = "/"
+    weight = 1
 
 [params.disqus]
     site = "hugo-initio-site.disqus.com"

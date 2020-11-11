@@ -1,0 +1,29 @@
+[404_title]
+    other = "404"
+[404_description]
+    other = "¡Ups! ¡Esta página no existe!"
+
+[subheader]
+    other = ""
+
+[read_more]
+    other = "Lee mas"
+[see_details]
+    other = "Ver detalles"
+[download]
+    other = "Descargar"
+[translations]
+    other = "Traducciones"
+
+
+[footer_lang_title]
+    other = "Idiomas"
+[footer_followme_title]
+    other = "Sígueme"
+[footer_contact_title]
+    other = "Contacto"
+[footer_text_title]
+    other = "Widget de texto"
+[footer_text_content]
+    other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    

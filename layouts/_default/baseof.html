@@ -7,16 +7,23 @@
   
   <body>
 
-  <header id="header" style="padding: 0; height: 100%">
-    {{ block "header" . }}
-      {{ partial "header.html" . }}
+  {{ block "hero" . }}
+  <section class = "hero" style="height:33vh;">
+    <div class="banner" style="background-image:url({{.Site.BaseURL}}{{ .Site.Params.banner }}); padding-top: 1em;" >
+      <a href="{{.Site.BaseURL | absLangURL}}">
+        <div class = "logo">
+          <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="" style = "width: 140px; height: 140px;">
+        </div>
+      </a>
+    </div>
+
+    {{ partial "menu.html" . }}
+  </section>
+  {{ end }}
+  
+    {{ block "languages" . }}
     {{ end }}
     
-    {{ block "nav" . }}
-        {{ partial "menu.html" . }}
-    {{ end }}
-  </header>
- 
     {{ block "main" . }}
     {{ end }}
     

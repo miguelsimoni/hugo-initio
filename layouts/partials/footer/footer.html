@@ -5,10 +5,10 @@
   			<div class="col-md-3 widget">
   				<h3 class="widget-title">{{ i18n "footer_contact_title" . | markdownify }}</h3>
   				<div class="widget-body">
-  					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
-  					{{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>{{ end }}
+  					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone | markdownify }}<br>{{ end }}
+  					{{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email | markdownify }}</a><br>{{ end }}
   						<br>
-  						{{ if .Site.Params.address }}{{ .Site.Params.address }}{{ end }}
+  						{{ if .Site.Params.address }}{{ .Site.Params.address | markdownify }}{{ end }}
   					</p>
   				</div>
   			</div>
@@ -38,11 +38,15 @@
   			</div>
 			{{ end }}
 
-			{{ if .Site.Params.footerEnableFormWidget }}
+			{{ if .Site.Params.footerEnableLangWidget }}
   			<div class="col-md-3 widget">
-  				<h3 class="widget-title">{{ i18n "footer_form_title" . | markdownify }}</h3>
+  				<h3 class="widget-title">{{ i18n "footer_lang_title" . | markdownify }}</h3>
   				<div class="widget-body">
-  					{{ i18n "footer_form_content" . | markdownify }}
+  					{{ range .Site.Languages -}}
+              {{ if ne $.Site.Language.Lang .Lang }}
+                <li><a rel="alternate" href="{{ .Lang | relURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a></li>
+              {{ end -}}
+            {{ end -}}
   				</div>
   			</div>
 			{{ end }}
@@ -57,14 +61,14 @@
 
 			<div class="col-md-6 widget">
 				<div class="widget-body">
-					<p>{{ if .Site.Params.address}}{{ .Site.Params.address }}{{ end }}</p>
+					<p>{{ if .Site.Params.address}}{{ .Site.Params.address | markdownify }}{{ end }}</p>
 				</div>
 			</div>
 
 			<div class="col-md-6 widget">
 				<div class="widget-body">
 					<p class="text-right">
-						Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}<br>
+						Copyright &copy; {{ .Site.Params.year | markdownify }}, {{ .Site.Params.name  | markdownify }}<br>
 						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
                         Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
                     </p>

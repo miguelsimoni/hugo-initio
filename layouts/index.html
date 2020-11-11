@@ -1,3 +1,25 @@
+{{ define "hero" }}
+  <section class = "hero" style="height:100vh;">
+    <div class="banner" style="background-image:url({{.Site.BaseURL}}{{ .Site.Params.banner }}); padding: 20vh; background-attachment: fixed;" >
+      <div class = "logo">
+        <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
+      </div>
+      <h1 class="text-center">
+        <span class="title">{{ .Site.Params.name }}</span>
+      </h1>
+      <a href="#Chapters">
+        <i class="fa fa-chevron-down" style="font-size:48px;color:#dbc3db;bottom: 10px;position:absolute;"></i>
+        </a>  
+    </div>
+    {{ partial "menu.html" . }}
+  </section>
+{{ end }}
+
+
+{{ define "languages" }}
+{{ end }}
+
+    
 {{ define "main"}}
   <main id="main">
 
@@ -9,7 +31,7 @@
       
         {{ range .Site.Sections }}
             {{ range .Sections.ByWeight }}
-              <div class="row section featured topspace">
+              <div id="{{ .Title }}" class="row section featured topspace">
                 <h2 class="section-title">
                   <span>{{.Title}}</span>
                 </h2>

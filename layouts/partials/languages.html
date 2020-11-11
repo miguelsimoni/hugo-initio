@@ -1,0 +1,20 @@
+{{ if .IsTranslated }}
+  <ul style="list-style-type: none; text-align: right;">
+    <li class="dropdown"  style="position: right; padding-right: 10%;">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            {{ i18n "translations" }}<b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu" style="right: 10%; width: 8%;left:auto;">
+          {{ range .Translations }}
+            <li>
+        		<span class="language-switcher" style="padding-left: 5px;"> 
+              <a href ="{{ .Permalink }}" style=""> {{ .Language.LanguageName }} {{ if .IsPage }} {{ end }} </a>
+        		</span>
+          </li>
+        {{ end}}
+  
+      </ul>
+    </li>
+  </ul> 
+{{ end }}
+ 
