@@ -47,6 +47,9 @@
                 
                 {{ else if eq $stype "client" }}
                   {{ partial "home/clients.html" . }}
+                  
+                {{ else if eq $stype "chapters" }}
+                  {{ partial "home/chapters.html" . }}
                 
                 {{ else if eq $stype "single"  }}
                   <div style="text-align: center;">

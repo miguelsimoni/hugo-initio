@@ -1,0 +1,53 @@
+<table class="table table-hover table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+  <thead>
+    <tr>
+      <th style="text-align:right;border-right: 1px solid;"> Country </th>
+      <th style="text-align:left;"> City </th>
+      <th style="text-align:right;"> Social Media </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ $chapters := "https://raw.githubusercontent.com/rladies/starter-kit/master/Current-Chapters.csv" }}
+    {{ $sep := "," }}
+    {{ range $i, $r := getCSV $sep $chapters }}
+    
+      {{ if ne $i 0 }} 
+        
+    <tr>
+       <td style="text-align:right;font-weight: bold;border-right: 1px solid;"> {{ index $r 0 }} </td>
+       
+       
+       <td style="text-align:left;"> <a href={{ index $r 3 }}>{{ index $r 2 }}</a> </td>
+       
+       <td style="text-align:right;"> 
+          {{ if ne (index $r 4) "" }}  
+            <a href={{ index $r 4 }}><i class="fab fa-twitter"></i></a>
+          {{ end }}
+          
+          {{ if ne (index $r 6) "" }}  
+            <a href={{ index $r 6 }}><i class="fab fa-facebook"></i></a>
+          {{ end }}
+          
+          {{ if ne (index $r 7) "" }}  
+            <a href={{ index $r 7 }}><i class="fab fa-instagram"></i></a>
+          {{ end }}
+          
+          {{ if ne (index $r 9) "" }}  
+            <a href={{ index $r 9 }}><i class="fab fa-youtube"></i></a>
+          {{ end }}
+    
+         {{ if ne (index $r 10) "" }}  
+            <a href={{ index $r 9 }}><i class="fab fa-github"></i></a>
+          {{ end }}
+          
+          {{ if ne (index $r 11) "" }}  
+            <a href={{ index $r 11 }}><i class="fa fa-globe"></i></a> 
+          {{ end }}
+          
+         </td>
+    </tr>
+  
+      {{ end }}
+    {{ end }}
+  </tbody>
+</table>
