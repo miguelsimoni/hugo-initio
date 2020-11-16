@@ -1,0 +1,29 @@
+{{ define "languages" }}
+    {{ partial "languages.html" .}}
+{{ end }}
+
+{{ define "main" }}
+<main id="main">
+	<div class="container" >
+		<div class="row topspace">
+
+				<header class="entry-header">
+ 					<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+				</header>
+				
+        <div class="entry-content">
+					{{ .Content }}
+				</div>
+				
+        <div class="flex-container">
+          <ul class="directory-grid" style="border: none;">
+            {{ $mentoring := $.Site.Data.mentoring | shuffle }}
+            {{ range $mentoring}}
+              {{ partial "mentoring/li.html" .}}
+            {{ end }}
+          </ul>
+        </div>
+		</div> <!-- /row post  -->
+	</div>	<!-- /container -->
+</main>
+{{ end }}

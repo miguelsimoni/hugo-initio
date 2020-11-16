@@ -12,8 +12,20 @@
 {{end}}
 
 {{ with .instagram }}
-  <a href="https://github.com/{{ . }}" target="_blank">
+  <a href="https://www.instagram.com/{{ . }}" target="_blank">
     <i class="fab fa-instagram"></i>
+  </a>
+{{end}}
+
+{{ with .youtube }}
+  <a href="https://www.youtube.com/{{ . }}" target="_blank">
+    <i class="fab fa-youtube"></i>
+  </a>
+{{end}}
+
+{{ with .periscope }}
+  <a href="https://www.periscope.tv/{{ . }}" target="_blank">
+    <i class="fab fa-periscope"></i>
   </a>
 {{end}}
 

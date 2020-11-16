@@ -134,6 +134,27 @@ a:hover, a:focus {
   padding: 5em;
 }
 
+buttonr{
+  background-color: #88398a;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  padding: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1em .5em;
+  cursor: pointer;
+}
+
+buttonr:hover {
+  background-color: #88398aee;
+}
+
+/******************/
+/* flex grid */
+/******************/
 .flex-container {
   width: 100vw;
   position: relative;
@@ -142,18 +163,6 @@ a:hover, a:focus {
   left: 50%;
 }
 
-.directory-grid {
-  display: flex;
-  flex-wrap: wrap; 
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  list-style-type: none;
-  overflow: wrap;
-  margin: 0;
-  padding: 0;
-}
 
 .flex-container h1 {
   font-size: 23px;
@@ -187,6 +196,22 @@ a:hover, a:focus {
   padding-bottom: 0;
 }
 
+/******************/
+/* directory grid */
+/******************/
+
+.directory-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  overflow: wrap;
+  margin: 0;
+  padding: 0;
+}
 
 .imgdiv {
   position: top left;
@@ -251,3 +276,205 @@ a:hover, a:focus {
   }
 }
 
+
+/********************/
+/* global team grid */
+/********************/
+.gt-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  overflow: wrap;
+}
+
+.gt-grid-item {
+  flex-grow: 1 0 0; 
+  height: 250px;
+  width: 250px;
+}
+
+.gt-content {
+  position: relative;
+  height: 225px;
+  width: 225px;
+  text-align: center;
+  border-radius: 1em;
+  border: 1px solid #88398a;
+  background-size: cover;
+  -moz-transition: all 1s ease-in-out 0s;
+	-webkit-transition: all 1s ease-in-out 0s;
+	-ms-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+}
+
+.gt-content-text{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gt-content-text:hover {
+  opacity: 1;
+}
+
+.gt-content-text h1 {
+  position: absolute;
+  width: 101%;
+  top: -22px;
+  left: -1px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #88398abe;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  padding: 5px; 
+  padding-left: 8px;
+
+}
+
+.gt-content-text p {
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  font-size: 12px;
+  font-weight: 300;
+  width: 101%;
+  background-color: #ffffffde;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  color: #88398a;
+  padding: 4px; 
+  padding-left: 25px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .gt-card {
+    width: 100%;
+  }
+}
+
+
+/******************/
+/* mentoring grid */
+/******************/
+
+
+.mentoring-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  overflow: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+
+.mentoring-grid-item {
+  flex-grow: 1 0 0; 
+  padding: 10px;
+  width: 600px; 
+  height: calc(600px / 1.8);
+}
+
+.mentoring-grid-card {
+  height: 100%;
+  width: 100%;
+  background-color: #88398a;
+}
+
+.mentorimg {
+  height: 93%;
+  width: 48%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}  
+
+.mentoring-topbar {
+  padding: 2px;
+  margin: 2px;
+  color: #fff;
+  width: 100%;
+  float: top;
+  background-color: #88398a;
+}
+
+.mentoring-col-right {
+  float: left;
+  width: 50%;
+}
+
+.mentoring-col-left {
+  float: left;
+  width: 48%;
+}
+
+.mentoring-grid-statement {
+  margin-left: 12px;
+  padding: 1.5%;
+  background-color: #fff;
+  width: 48%;
+  float: left;
+  height: 90%;
+  border: 10px double #ddd;
+}
+
+.mentoring-grid-statement p {
+  font-size: 16px;
+  color: #222;
+}
+
+
+.mentoring-grid-statement h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mentoring-grid-statement h2 {
+  font-size: 14px;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  .mentoring-grid-item {
+    width: 450px; /* golden ratio */
+    height: calc(450px * 1.6);
+    position: relative;
+  }
+  
+  .mentoring-grid-card {
+    position: relative;
+  }
+  
+  .mentorimg{
+    position: absolute;
+    top: 22px;
+    float: none;
+    height: 50%;
+    width: 100%;
+  }
+  
+  .mentoring-grid-statement {
+    position: absolute;
+    top: 390px;
+
+    padding-top: 3%;
+    width: 95%;
+    float: none;
+    height: 40%;
+  }
+  
+}

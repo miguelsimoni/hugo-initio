@@ -1,0 +1,26 @@
+
+  <li class="mentoring-grid-item">
+    <a href="https://twitter.com/{{ .twitter }}">
+      <div class="mentoring-grid-card">
+        <div class="mentoring-topbar" style="text-transform: uppercase;">
+          <div class="mentoring-col-left"><p>Mentoring program</p></div>
+          <div class="mentoring-col-right" style="text-align: right;"><p><i class="fab fa-twitter"></i> {{ .twitter }}</p></div>
+        </div> <!-- topbar -->
+      </a>
+      <a href={{ .url }}>
+        <div class="mentorimg" style="background-image: url(img/{{ .img }});" ></div>
+        <div class="mentoring-grid-statement">
+                  <p>"{{ .statement }}"</p>
+          <div class="mentoring-col-left" width="70%" style="height: 75px; position: relative;">
+            <div style="height: 80px; position: absolute; bottom: 0;">
+                <h1><b>{{ .name }}</b></h1> 
+                <h2>Mentee -<br>{{ .chapter }}</h2>
+            </div>
+          </div>
+          <div class="mentoring-col-right" style="height: 75px; position: relative;">
+            <img src="/images/logo.png" style="height: 60px; position: absolute; bottom: 0; right: 0;">
+          </div>
+        </div>
+      </a>
+    </div>
+  </li>

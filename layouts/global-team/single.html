@@ -1,0 +1,60 @@
+{{ define "languages" }}
+    {{ partial "languages.html" .}}
+{{ end }}
+
+{{ define "main" }}
+<main id="main">
+	<div class="container" >
+		<div class="row topspace">
+
+				<header class="entry-header">
+ 					<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+				</header>
+				
+				<p>{{ .Content }}</p>
+				
+    <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+     <thead>
+      <tr>
+       <th style="text-align:right;"> name </th>
+       <th style="text-align:left;"> role </th>
+      </tr>
+     </thead>
+      <tbody>
+        {{ $url := "https://raw.githubusercontent.com/Athanasiamo/starter-kit/master/jsons/global-team.json" }}
+        {{ $leadership := getJSON $url }}
+        {{ range $leadership | shuffle}}
+          <tr>
+                        
+         <td style="text-align:right;font-weight: bold;" rowspan="{{ len .role }}"> {{ .name }} </td>
+         
+        {{ range .role }}
+           <td style="text-align:left;vertical-align: top !important;"> {{ . }} </td> </tr>
+         {{ end }}
+
+         {{ end }}
+
+      </tbody>
+    </table>
+    
+    <div class="flex-container">
+      <ul class="gt-grid">
+      {{ range $leadership }}     
+        <li>
+          <div class="gt-grid-item">
+            <div class="gt-content" style="background-image: url(img/{{ .img | default "placeholder.png" }});">
+              <div class="gt-content-text">
+                <h1>{{ .name }}</h1>
+                <p>{{ delimit .role ", " }}</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      {{ end }}
+      </ul>
+    </div>
+
+		</div> <!-- /row post  -->
+	</div>	<!-- /container -->
+</main>
+{{ end }}

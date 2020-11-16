@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <ul class="directory-grid">
+        {{ $dt := getJSON "https://ropensci.github.io/roregistry/registry.json" }}
+        {{ $directory := .Resources.GetMatch "directory" | transform.Unmarshal }}
+        {{ range $index, $area := $directory }}
+        boo
+            <li class="directory-grid-item">
+                <h2>{{ .name }}</h2>
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}
