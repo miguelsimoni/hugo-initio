@@ -11,7 +11,7 @@
  						<div class="entry-meta">
                <span class="posted-on">
                   <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-                     {{- .Date.Format "January 2, 2006" -}}
+                    {{- .Date.Format "January 2, 2006" -}}
                   </time>
                </span>
  						</div>
@@ -25,13 +25,13 @@
 			</div>
 		</div> <!-- /row post  -->
 
-        <div class="row">
+		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
 
 				<div id="share">
-                    {{ if .Params.Share }}
-                       {{ partial "sharethis.html" . }}
-                    {{ end }}
+					{{ if .Params.Share }}
+							{{ partial "sharethis.html" . }}
+					{{ end }}
 				</div>
 			</div>
 		</div> <!-- /row share -->
@@ -41,9 +41,9 @@
 			<div class="col-sm-8 col-sm-offset-2">
 
 				<div id="comments">
-                    {{ if .Params.Comments }}
-                       {{ partial "disqus.html" . }}
-                    {{ end }}
+					{{ if .Params.Comments }}
+							{{ partial "disqus.html" . }}
+					{{ end }}
 				</div>
 			</div>
 		</div> <!-- /row comments -->

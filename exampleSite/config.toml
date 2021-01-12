@@ -1,11 +1,12 @@
-baseURL = "https://miguelsimoni.github.io/hugo-initio-site/"
-languageCode = "en-us"
+baseURL = "http://localhost:1313/"
+languageCode = "en"
 title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
 publishDir = "docs"
 
 [params]
     name = "Anthony Russel"
+    description = "A mystery person"
     email = "anthony.russel42@example.com"
     phone = "+234 23 9873237"
     address = "234 Hidden Pond Road, Ashland City, TN 37015"
@@ -16,12 +17,13 @@ publishDir = "docs"
     banner = "images/bg_head.jpg"
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
+    author = "Sergey Pozhilov (GetTemplate.com)"
 
     showSubheader = true
     showServices = true
-    showRecentWorks = true
-    showDownload = true
-    showClients = true
+    showRecentWorks = false
+    showDownloads = false
+    showClients = false
 
     footerEnableContact = true
     footerEnableFollowme = true

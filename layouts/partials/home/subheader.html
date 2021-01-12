@@ -1,5 +1,9 @@
+{{ range where .Site.Pages "Type" "subheader" }}
 <div class="row section topspace">
     <div class="col-md-12">
-       <p class="lead text-center text-muted">{{ .Site.Params.subheader }}</p>
+        <div class="lead text-center text-muted">
+           {{ .Content }}
+        </div>
     </div>
 </div> <!-- / section -->
+{{ end }}

@@ -1,14 +1,14 @@
-{{ range where .Data.Pages "Section" .Section }}
-    <div class="row section topspace">
-        <div class="panel panel-cta">
-            <div class="panel-body">
-                <div class="col-lg-8">
-                    {{ .Content }}
-                </div>
-                <div class="col-lg-4 text-right">
-                    <a href={{ .Params.file }} class="btn btn-primary btn-lg">{{ .Title }}</a>
-                </div>
+<div class="row section topspace">
+    {{ range where .Data.Pages "Section" .Section }}
+    <div class="panel panel-cta">
+        <div class="panel-body">
+            <div class="col-lg-8">
+                {{ .Content }}
+            </div>
+            <div class="col-lg-4 text-right">
+                <a href={{ .Params.file }} class="btn btn-primary btn-lg">{{ .Title }}</a>
             </div>
         </div>
-    </div> <!-- /section -->
-{{ end }}
+    </div>
+    {{ end }}
+</div> <!-- /section -->
