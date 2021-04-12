@@ -9,26 +9,33 @@
       
         {{ range .Site.Sections }}
             {{ range .Sections.ByWeight }}
-              <div class="row section featured topspace">
-                <h2 class="section-title">
-                  <span>{{.Title}}</span>
-                </h2>
                 {{ $stype := .Type}}
-                {{ if eq $stype "service"}}
-                  {{ partial "home/services.html" . }}
-                
-                {{ else if eq $stype "recentwork" }}
-                  {{ partial "home/recentworks.html" . }}
-                
-                {{ else if eq $stype "download" }}
-                  {{ partial "home/download.html" . }}
-                
-                {{ else if eq $stype "client" }}
-                  {{ partial "home/clients.html" . }}
-                
-                {{ else if eq $stype "single"  }}
-                  {{ partial "home/single.html" . }} 
-                
+                {{ if (or (and (eq $stype "service") (.Site.Params.showServices))
+                          (and (eq $stype "recentwork") (.Site.Params.showRecentWorks))
+                          (and (eq $stype "download") (.Site.Params.showDownloads))
+                          (and (eq $stype "client") (.Site.Params.showClients))
+                          (eq $stype "single")) }}
+
+                     <div class="row section featured topspace">
+                       <h2 class="section-title">
+                         <span>{{.Title}}</span>
+                       </h2>
+                     {{ if eq $stype "service" }}
+                       {{ partial "home/services.html" . }}
+
+                     {{ else if eq $stype "recentwork" }}
+                       {{ partial "home/recentworks.html" . }}
+
+                     {{ else if eq $stype "download" }}
+                       {{ partial "home/download.html" . }}
+
+                     {{ else if eq $stype "client" }}
+                       {{ partial "home/clients.html" . }}
+
+                     {{ else if eq $stype "single"  }}
+                       {{ partial "home/single.html" . }}
+
+                     {{ end }}
                 {{ end }}
             {{ end }}
         {{ end }}
