@@ -230,8 +230,8 @@ a:hover {
 
 #head img {
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 20%;
+  height: 20%;
   overflow: hidden;
   border: 9px solid rgba(0, 0, 0, 0.05);
   margin: 0 auto;
@@ -273,7 +273,7 @@ a:hover {
   color: #5E5E5E;
 }
 .home #head {
-  padding: 90px 0;
+  padding: 45px 0;
 }
 .home #head .title {
   font-size: 49px;

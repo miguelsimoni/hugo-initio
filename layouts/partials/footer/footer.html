@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			{{ if .Site.Params.footerEnableContact }}
-			<div class="col-md-3 widget">
+			<div class="col-md-4 widget">
 				<h3 class="widget-title">Contact</h3>
 				<div class="widget-body">
 					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
@@ -15,7 +15,7 @@
 			{{ end }}
 
 			{{ if .Site.Params.footerEnableFollowme }}
-			<div class="col-md-3 widget">
+			<div class="col-md-4 widget">
 				<h3 class="widget-title">Follow me</h3>
 				<div class="widget-body">
 					<p class="follow-me-icons">
@@ -30,7 +30,7 @@
 			{{ end }}
 
 			{{ if .Site.Params.footerEnableTextWidget }}
-			<div class="col-md-3 widget">
+			<div class="col-md-4 widget">
 				<h3 class="widget-title">Text widget</h3>
 				<div class="widget-body">
 					<p>
@@ -44,7 +44,7 @@
 			{{ end }}
 
 			{{ if .Site.Params.footerEnableFormWidget }}
-			<div class="col-md-3 widget">
+			<div class="col-md-4 widget">
 				<h3 class="widget-title">Form widget</h3>
 				<div class="widget-body">
 					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
@@ -74,7 +74,7 @@
 				<div class="widget-body">
 					<p class="text-right">
 						Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}<br>
-						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
+						Design: <a href="http://www.gettemplate.com/info/initio" rel="designer">Initio</a> - 
 						Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
 					</p>
 				</div>

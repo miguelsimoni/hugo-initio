@@ -1,7 +1,7 @@
 
 <div class="row">
     {{ range where .Data.Pages "Section" .Section }}
-      <div class="col-sm-6 col-md-3">
+      <div class="col-sm-12 col-md-4">
         <h3 class="text-center">{{ .Title }}</h3>
         <p>{{ .Summary }}</p>
         <p class="text-center"><a href="{{ .Permalink }}" class="btn btn-action">Read more</a></p>
