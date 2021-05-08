@@ -10,29 +10,42 @@
         {{ range .Site.Sections }}
             {{ range .Sections.ByWeight }}
               <div class="row section featured topspace">
-                <h2 class="section-title">
-                  <span>{{.Title}}</span>
-                </h2>
-                {{ $stype := .Type}}
-                {{ if eq $stype "service"}}
+              {{ $stype := .Type}}
+                {{ if and (eq $stype "service") (.Site.Params.showServices) }}
+                  <h2 class="section-title">
+                    <span>{{.Title}}</span>
+                  </h2>
                   {{ partial "home/services.html" . }}
                 
-                {{ else if eq $stype "recentwork" }}
+                {{ else if and (eq $stype "recentwork") (.Site.Params.showRecentWorks) }}
+                  <h2 class="section-title">
+                    <span>{{.Title}}</span>
+                  </h2>
                   {{ partial "home/recentworks.html" . }}
                 
-                {{ else if eq $stype "download" }}
+                {{ else if and (eq $stype "download") (.Site.Params.showDownloads) }}
+                  <h2 class="section-title">
+                    <span>{{.Title}}</span>
+                  </h2>
                   {{ partial "home/download.html" . }}
                 
-                {{ else if eq $stype "client" }}
+                {{ else if and (eq $stype "client") (.Site.Params.showClients) }}
+                  <h2 class="section-title">
+                    <span>{{.Title}}</span>
+                  </h2>
                   {{ partial "home/clients.html" . }}
                 
                 {{ else if eq $stype "single"  }}
+                  <h2 class="section-title">
+                    <span>{{.Title}}</span>
+                  </h2>
                   {{ partial "home/single.html" . }} 
                 
                 {{ end }}
+              </div>	<!-- /section -->
             {{ end }}
         {{ end }}
-  	</div>	<!-- /container -->
+    </div>	<!-- /container -->
   </main>
 
 {{ end }}
