@@ -2,7 +2,6 @@ baseURL = "http://localhost:1313/"
 languageCode = "en"
 title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
-publishDir = "docs"
 
 [params]
     name = "Anthony Russel"
