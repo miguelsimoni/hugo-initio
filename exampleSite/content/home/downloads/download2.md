@@ -1,6 +1,6 @@
 +++
 title = "Download HUGO template"
-file = "https://github.com/miguelsimoni/hugo-initio/archive/master.zip"
+file = "https://github.com/miguelsimoni/hugo-initio/archive/main.zip"
 weigth = 2
 +++
 
