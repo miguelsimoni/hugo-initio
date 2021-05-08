@@ -34,28 +34,38 @@ More info: [hugo setup guide](https://gohugo.io/overview/installing/)
 
 ## Configuration
 
+[Live Demo](https://miguelsimoni.github.io/hugo-initio-site/)
+
 [Example Site](https://github.com/miguelsimoni/hugo-initio/tree/master/exampleSite)
 
 [config.toml](https://github.com/miguelsimoni/hugo-initio/tree/master/exampleSite/config.toml)
 
 ### Sections
 
+You can show or hide each home page section from the `config.toml`:
 
 ```toml
 showSubheader = true
 showServices = true
 showRecentWorks = true
-showDownload = true
+showDownloads = true
 showClients = true
-
-footerEnableContact = true
-footerEnableFollowme = true
-footerEnableTextWidget = false
-footerEnableFormWidget = false
 ```
-### Social Networks Icons
 
-You can add as many social networks as you want in the params.social array following this template:
+### Footer
+
+You can show or hide each footer widget from the `config.toml`:
+
+```toml
+showFooterContact = true
+showfooterFollowMe = true
+showFooterTextWidget = true
+showFooterFormWidget = true
+```
+
+### Social Networks
+
+You can add as many social networks as you want in the `params.social` array following this template:
 
 ```toml
 [[params.social]]
@@ -94,10 +104,11 @@ Disable the Google Analytics by leaving `params.google.analytics.trackerID` empt
 In order to see your site in action, you can run Hugo's built-in local server.
 
 ```
-$ hugo server
+$ cd exampleSite
+$ hugo server -t ../..
 ```
 
-Now enter [`http://localhost:1313/hugo-initio-site/`](http://localhost:1313/hugo-initio-site/) in the address bar of your browser.
+Now enter [`http://localhost:1313/`](http://localhost:1313/) in the address bar of your browser.
 
 ## Deployment
 

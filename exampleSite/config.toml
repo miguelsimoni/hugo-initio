@@ -21,14 +21,14 @@ publishDir = "docs"
 
     showSubheader = true
     showServices = true
-    showRecentWorks = false
-    showDownloads = false
-    showClients = false
+    showRecentWorks = true
+    showDownloads = true
+    showClients = true
 
-    footerEnableContact = true
-    footerEnableFollowme = true
-    footerEnableTextWidget = true
-    footerEnableFormWidget = true
+    showFooterContact = true
+    showFooterFollowMe = true
+    showFooterTextWidget = true
+    showFooterFormWidget = true
 
 [[menu.main]]
     name = "home"
