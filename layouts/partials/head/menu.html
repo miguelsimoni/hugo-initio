@@ -31,13 +31,13 @@
                 </li>
                 {{ else }}
                 <li>
-                    <a href="{{ .URL }}">{{ .Name }}</a>
+                    <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
                 </li>
                 {{ end }}
             {{ end}}
             </ul>
 
-        </div> 
+        </div>
         <!--/.nav-collapse -->
     </div>
 </nav>
