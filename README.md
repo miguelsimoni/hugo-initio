@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/miguelsimoni/hugo-initio.svg?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/miguelsimoni/hugo-initio.svg?style=flat-square)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/miguelsimoni/hugo-initio.svg?style=flat-square)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/miguelsimoni/hugo-initio/master.svg?style=flat-square)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/miguelsimoni/hugo-initio/main.svg?style=flat-square)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/miguelsimoni/hugo-initio.svg?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/miguelsimoni/hugo-initio.svg?style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/miguelsimoni/hugo-initio.svg?style=flat-square)
