@@ -56,12 +56,11 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          pwd && ls
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --contentDir ./exampleSite
+            --confing ./exampleSite/config.toml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
