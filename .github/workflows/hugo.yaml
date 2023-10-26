@@ -60,7 +60,7 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --contentDir exampleSite
+            --contentDir ./exampleSite
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
