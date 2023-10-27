@@ -29,13 +29,6 @@ themesDir = "../"
     showFooterTextWidget = true
     showFooterFormWidget = true
 
-Mission
-A propos  
-Membres
-Adhésion
-Communiqués et publications (COM)
-Contact
-
 [[menu.main]]
     name = "A propos"
     url = "/"
