@@ -3,7 +3,7 @@
     <h1 id="logo" class="text-center">
       <img class='img-{{ .Site.Params.avatarclass | default "circle"}}' src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
       <span class="title">{{ .Site.Params.name }}</span>
-      <span class="tagline">{{ .Site.Params.description }}<br>
+      <span class="tagline">{{ .Site.Params.description | safeHTML}}<br>
         <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
       </span>
    </h1>
