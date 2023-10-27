@@ -5,7 +5,7 @@ theme = "hugo-initio"
 themesDir = "../"
 [params]
     name = "CIMVO-95"
-    description = "Conseil des Institution Musulmanes du Val d'Oise - 95"
+    description = "Conseil des Institutions <br> Musulmanes du Val d'Oise - 95"
     email = "contact@cimvo.fr"
     phone = "+234 23 9873237"
     address = "26 Av. du Hazay, 95800 Cergy, France"
@@ -29,14 +29,37 @@ themesDir = "../"
     showFooterTextWidget = true
     showFooterFormWidget = true
 
+Mission
+A propos  
+Membres
+Adhésion
+Communiqués et publications (COM)
+Contact
+
 [[menu.main]]
-    name = "home"
+    name = "A propos"
     url = "/"
     weight = 1
 [[menu.main]]
+    name = "Mission"
+    url = "/"
+    weight = 2
+[[menu.main]]
+    name = "Membres"
+    url = "/"
+    weight = 3
+[[menu.main]]
+    name = "Adhésion"
+    url = "/"
+    weight = 4
+[[menu.main]]
+    name = "Communiqués"
+    url = "/"
+    weight = 5
+[[menu.main]]
     name = "blog"
     url = "/post/"
-    weight = 5
+    weight = 6
 
 [params.disqus]
     site = "hugo-initio-site.disqus.com"
