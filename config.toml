@@ -1,8 +1,8 @@
-baseURL = "https://example.com/"
+baseURL = "https://benbbe.github.io/hugo-initio/"
 languageCode = "en"
 title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
-themesDir = "../"
+
 [params]
     name = "CIMVO-95"
     description = "Conseil des Institutions <br> Musulmanes du Val d'Oise - 95"
