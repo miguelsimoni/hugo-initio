@@ -1,12 +1,27 @@
 +++
-date = "2013-06-17T12:00:00-00:00"
-title = "Vivamus Lacus Mauris"
+date = "2013-10-15T12:00:00-00:00"
+title = "Communiqué - Attentat Arras"
 
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae. Adipisci ad natus deleniti.
+L'attentat meurtrier au lycée Gambetta de ce vendredi 13 octobre est un
+acte visant l'éducation nationale et derrière elle toute la communauté
+nationale.
+Le CIMVO-95 veut rendre hommage à Dominique Bernard adresse ses
+sincères condoléances et son soutien à tous ses proches et une pensée
+aux victimes, à leurs familles respectives, au personnel et aux élèves de
+l'établissement. Le CIMVO-95 souhaite également un prompt
+rétablissement aux blessés de l'attentat.
+Le CIMVO-95 se tient au côté de toute la communauté nationale et tient à
+la protection des écoles de toute violence et de tout obscurantisme afin
+de garantir son rôle d'enseignement et d'éducation des nouvelles
+générations.
+Nous condamnons avec la plus grande fermeté cette acte barbare et
+odieux.
+Le CIMVO-95, représenté par son président, Mr Abrous Sadek a participé
+ce matin à la cérémonie de mémoire de Samuel Paty à Eragny-sur-Oise
+(95).
+Paix aux âmes des victimes.
 
-Dolores harum alias consequatur blanditiis. Inventore, quod, ullam veritatis eum ratione neque quis fugit quae optio facilis in ipsa! Maiores, quia, possimus repellendus iusto nostrum nisi doloribus qui excepturi ducimus veritatis molestiae autem consequatur quae ex nihil id sapiente minima adipisci. Quibusdam, aperiam, sapiente, nobis, possimus vero laudantium delectus esse minus quo nihil perspiciatis accusamus. Cupiditate sapiente illum accusantium animi pariatur sed minima nam.
-
-Harum, consectetur, quia nisi fugiat quasi ea amet cum inventore aperiam optio qui perspiciatis debitis molestiae laborum minima doloremque ullam eum nesciunt repellendus dolor dicta cumque deserunt. Quaerat, saepe, maxime, quod, dolor nisi assumenda aut est quos optio animi aliquid quidem voluptates adipisci hic recusandae dicta quis eligendi illo ducimus asperiores reiciendis odit distinctio natus? In, reprehenderit, facere, ipsam, vel architecto autem temporibus a quidem voluptatum at nesciunt quas facilis. Soluta, excepturi, nihil, illum dicta hic ratione tenetur voluptate dolorum a tempore dignissimos reprehenderit voluptas expedita officiis enim minus adipisci?
-
+Cergy le 15 Octobre 2023 
+Le Bureau du CIMVO-95

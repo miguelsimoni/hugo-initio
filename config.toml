@@ -10,7 +10,7 @@ theme = "hugo-initio"
     phone = "+234 23 9873237"
     address = "26 Av. du Hazay, 95800 Cergy, France"
     year = 2022
-    avatar = "images/guy.png"
+    avatar = "images/logo.png"
     avatarclass = "circle"
     background = ""
     banner = "images/cimvo-alqods.jpg"
@@ -47,12 +47,8 @@ theme = "hugo-initio"
     weight = 4
 [[menu.main]]
     name = "Communiqués"
-    url = "/"
-    weight = 5
-[[menu.main]]
-    name = "blog"
     url = "/post/"
-    weight = 6
+    weight = 5
 
 [params.disqus]
     site = "hugo-initio-site.disqus.com"
@@ -86,36 +82,8 @@ theme = "hugo-initio"
     sharethis = false
     network = ""
 [[params.social]]
-	title = "google+"
-	url = "https://plus.google.com/+nickname"
-    icon = "fab fa-google-plus-square"
-    footer = false
-    sharethis = true
-    network = "googleplus"
-[[params.social]]
-	title = "linkedin"
-	url = "https://www.linkedin.com/in/nickname"
-    icon = "fab fa-linkedin"
-    footer = false
-    sharethis = true
-    network = "linkedin"
-[[params.social]]
-	title = "tumblr"
-	url = "https://nickname.tumblr.com"
-    icon = "fab fa-tumblr-square"
-    footer = false
-    sharethis = false
-    network = "tumblr"
-[[params.social]]
-	title = "github"
-	url = "https://github.com/nickname"
-    icon = "fab fa-github"
-    footer = true
-    sharethis = false
-    network = ""
-[[params.social]]
 	title = "email"
-	url = "mailto:some.email@somewhere.com"
+	url = "mailto:contact@cimvo95.fr"
     icon = "fas fa-envelope-square"
     footer = false
     sharethis = true
