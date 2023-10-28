@@ -1,0 +1,32 @@
+[home_services]
+    other = "Missions"
+
+[home_recentworks]
+    other = "Travaux récents"
+
+[home_clients]
+    other = "Clients"
+
+[404_title]
+    other = "404"
+[404_description]
+    other = "Oops! La page que vous cherchez n'existe pas"
+
+[footer_contact_title]
+    other = "Contact"
+
+[footer_followme_title]
+    other = "Suivez-nous!"
+
+[footer_text_title]
+    other = "Text widget"
+[footer_text1]
+    other = "CIMVO-95, association loi 1901, est le Conseil des Institutions Musulmanes du Val d'Oise. Association accréditée par la Préfécture du Val d'OIse pour représenter l'ensemble des association cultuelles Musulmanes du département"
+[footer_text2]
+    other = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!"
+
+[footer_form_title]
+    other = "Form widget"
+
+[recent_works_click_text]
+    other = "Voir Plus!"
