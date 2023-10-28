@@ -1,0 +1,21 @@
+<div class="thumbnails recentworks">
+    {{ $data := .Resources.GetMatch .Params.file | transform.Unmarshal }} 
+    {{ range $index, $area := $data }}
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <a class="thumbnail" href="{{ .url }}">
+                <span class="img">
+                    <img src="{{ .image }}" alt="">
+                    <span class="cover"><span class="more">{{ i18n "recent_works_click_text" }} &rarr;</span></span>
+                </span>
+                <span class="title">{{ .name }}</span>
+            </a>
+            <span class="details">
+                {{ $len := sub (len .items) 1 }}
+                {{ range $i, $item := where .items "id" .index }}
+                    <a href="{{ .url }}">{{ .name }}</a>
+                    {{ if gt $len $i }} | {{ end }}
+                {{ end }}
+            </span>
+        </div>
+    {{ end }}
+</div>

@@ -1,0 +1,90 @@
+baseURL = "https://benbbe.github.io/hugo-initio/"
+languageCode = "en"
+title = "Initio - Free, multipurpose html5 template by GetTemplate"
+theme = "hugo-initio"
+
+[params]
+    name = "CIMVO-95"
+    description = "Conseil des Institutions <br> Musulmanes du Val d'Oise - 95"
+    email = "contact@cimvo.fr"
+    phone = "+234 23 9873237"
+    address = "26 Av. du Hazay, 95800 Cergy, France"
+    year = 2022
+    avatar = "images/logo.png"
+    avatarclass = "circle"
+    background = ""
+    banner = "images/cimvo-alqods.jpg"
+    favicon = "images/gt_favicon.png"
+    DateForm = "January 2, 2006"
+    author = "Sergey Pozhilov (GetTemplate.com)"
+
+    showSubheader = true
+    showServices = true
+    showRecentWorks = true
+    showDownloads = true
+    showClients = true
+
+    showFooterContact = true
+    showFooterFollowMe = true
+    showFooterTextWidget = true
+    showFooterFormWidget = true
+
+[[menu.main]]
+    name = "A propos"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Mission"
+    url = "/"
+    weight = 2
+[[menu.main]]
+    name = "Membres"
+    url = "/"
+    weight = 3
+[[menu.main]]
+    name = "Adhésion"
+    url = "/"
+    weight = 4
+[[menu.main]]
+    name = "Communiqués"
+    url = "/post/"
+    weight = 5
+
+[params.disqus]
+    site = "hugo-initio-site.disqus.com"
+
+[params.sharethis]
+    property = "123456789012345678901234"
+    custom = true
+
+[params.google.analytics]
+    trackerID = "GA-000000000-0"
+
+[[params.social]]
+	title = "facebook"
+	url = "https://www.facebook.com/nickname"
+    icon = "fab fa-facebook-square"
+    footer = true
+    sharethis = true
+    network = "facebook"
+[[params.social]]
+	title = "twitter"
+	url = "https://twitter.com/nickname"
+    icon = "fab fa-twitter-square"
+    footer = true
+    sharethis = true
+    network = "twitter"
+[[params.social]]
+	title = "instagram"
+	url = "https://www.instagram.com/nickname"
+    icon = "fab fa-instagram"
+    footer = true
+    sharethis = false
+    network = ""
+[[params.social]]
+	title = "email"
+	url = "mailto:contact@cimvo95.fr"
+    icon = "fas fa-envelope-square"
+    footer = false
+    sharethis = true
+    network = "email"
